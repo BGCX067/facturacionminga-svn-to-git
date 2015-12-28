@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3a512682-8397-4198-89f9-1c478f2a3a97">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="ruc_prov" class="java.lang.String"/>
+	<field name="nombres_per" class="java.lang.String"/>
+	<field name="apellidos_per" class="java.lang.String"/>
+	<field name="empresa_prov" class="java.lang.String"/>
+	<field name="direccion_prov" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="178" y="15" width="250" height="44" uuid="d2cb6c8c-973e-4877-a2ee-ecd8821c6b1f"/>
+				<textElement>
+					<font fontName="Agency FB" size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte Proveedores]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="98" height="20" uuid="196c5f52-d26f-4151-9a52-7a97c670324b"/>
+				<text><![CDATA[Cedula / RUC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="5" width="131" height="20" uuid="f38fb5e3-7541-415a-8f68-10ccf1b92073"/>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="5" width="134" height="20" uuid="d956a539-1bcf-4a00-b555-95d40aa350c9"/>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="5" width="88" height="20" uuid="ccb13ba7-a0d8-49f1-8fe8-69cab851a3ca"/>
+				<text><![CDATA[Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="451" y="5" width="100" height="20" uuid="bb2c8b2b-5bf0-42ec-8d22-7dbcd1e6b6c0"/>
+				<text><![CDATA[Dirección Emp.]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="98" height="20" uuid="c51e6a00-2a66-434a-8975-82f4d8b4ee81"/>
+				<textFieldExpression><![CDATA[$F{ruc_prov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="0" width="131" height="20" uuid="ae66e991-8555-46fa-adb7-6bd8a3b03ef7"/>
+				<textFieldExpression><![CDATA[$F{nombres_per}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="0" width="134" height="20" uuid="16c1d505-677b-4700-a962-312762e8495a"/>
+				<textFieldExpression><![CDATA[$F{apellidos_per}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="0" width="88" height="20" uuid="321a0f90-05c4-4c49-9727-c62a984267ed"/>
+				<textFieldExpression><![CDATA[$F{empresa_prov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="451" y="0" width="100" height="41" uuid="6099b250-906b-4760-801b-46173feaa152"/>
+				<textFieldExpression><![CDATA[$F{direccion_prov}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

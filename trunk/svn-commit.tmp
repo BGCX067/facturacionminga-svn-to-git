@@ -1,0 +1,11 @@
+chevere
+--Esta línea y las que están debajo serán ignoradas--
+
+M    controlador/daos/RolDao.java
+M    controlador/daos/PersonaDao.java
+M    controlador/servicios/ServicioPersona.java
+M    controlador/servicios/ServicioRol.java
+M    vista/PanelAdministrarClientes.java
+M    vista/PanelAdministrarClientes.form
+M    modelo/Persona.java
+M    modelo/Cuenta.java
